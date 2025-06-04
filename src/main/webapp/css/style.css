@@ -1,0 +1,257 @@
+@charset "UTF-8";
+
+body {
+	padding-top: 110px;/*headerの高さ + paddingに合わせる*/
+}
+
+/*header*/
+
+/*上部固定*/
+#header {
+	height: 70px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #4CAF50;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+}
+
+#header.fixed {
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+}
+
+
+nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+	margin-right: 50px;
+	padding-right: 50px;
+}
+
+section {
+	padding: 300px 0;
+}
+
+#header li{
+	color: #fff;
+	list-style: none;
+	width: 33%;
+	display: flex;
+	justify-content: center;
+}
+
+#g-navi li a {
+	color: #fff;
+	text-decoration: none;
+	list-style: none;
+	width: 33%;
+	padding: 10px;
+	font-size: 1.4rem;
+	text-align: center;
+}
+
+
+#flower-img {
+	margin-top: 100px;
+	margin-bottom: 300px;
+	max-width: 1800px;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+#flower-img img {
+	width: 100%;
+	height: 580px;
+	object-fit: cover;
+	display: block;
+	margin-bottom: 100px;
+}
+
+/*slider*/
+
+.slider-img img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 10px;
+	gap: 20px;
+}
+/*スライド左右の余白*/
+.slider-img .slick-slide {
+	padding: 0 10px;
+	box-sizing: 10px;
+}
+
+.slider {
+	margin: 0 auto;
+	width: 90%;
+}
+
+/*profile*/
+
+#profile {
+	padding: 60px 20px;
+}
+
+#profile h2 {
+	font-size: 2.4rem;
+	font-weight: bold;
+	margin: 60px 0;
+	margin-bottom: 60px;
+	text-align: center;
+	margin-bottom: 40px;
+	line-height: 1.4;
+}
+
+#profile li {
+	font-size: 1.4rem;
+	margin-top: 8px;
+	list-style: none;
+}
+	
+.split-container {
+	display: flex;
+	justify-content: space-between;
+	gap: 40px;
+	margin: 0 auto;
+	max-width: 1500px;
+	padding: 15px;
+	white-space: normal;
+}
+
+.left-content, .right-content {
+	flex: 1;
+	min-width: 0;
+	background-color: #f9f9f9;
+	padding: 20px;
+	border-radius: 12px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.left-content h3, .right-content h3 {
+	margin-bottom: 6px;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.left-content {
+	background-color: #f9f9f9;
+	padding: 20px;
+}
+
+.right-content {
+	background-color: #eef6ff;
+	padding: 20px;
+}
+
+.left-content ul li{
+	font-size: 3rem;
+}
+
+
+
+/*hobbies*/
+
+#hobbies h2 {
+	font-size: 2.4rem;
+	font-weight: bold;
+	margin: 60px 0;
+	margin-bottom: 60px;
+	text-align: center;
+	margin-bottom: 0.2em;
+	margin-top: 60px;
+	line-height: 2%;
+}
+
+.card-container {
+	display: flex;
+	gap: 80px;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 80px;
+}
+
+.card {
+	background-color: azure;
+	border-radius: 12px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	padding: 30px;
+	width: 450px;
+	text-align: center;
+	transition: transform 0.2 ease;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+}
+
+.card img {
+	width: 400px;
+	height: 400px;
+	object-fit: contain;
+	margin-bottom: 5px;
+}
+
+.card h3 {
+	margin-top: -20px;
+	margin-bottom: 5px;
+	font-size: 1.5rem;
+}
+
+.card p {
+	font-size: 1.1rem;
+	color: #333333;
+}
+
+/*interests*/
+
+#interests h2 {
+	font-size: 2.4rem;
+	font-weight: bold;
+	margin: 60px 0 20px;
+	margin-bottom: 60px;
+	text-align: center;
+	line-height: 2%;
+}
+
+table {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	border-collapse: collapse;
+	background-color: azure;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	gap: 60px;
+}
+
+th,td {
+	padding: 4rem;
+	border-bottom: 1px solid #ddd;
+	text-align: left;
+	vertical-align: top;
+	font-size: 1.4rem;
+}
+
+tr:nth-child(even) {
+	background-color: #f0f0f0;
+}
+
+/*footer*/
+
+footer p {
+	text-align: center;
+	background-color: #4CAF50;
+	color: #f0f0f0;
+}
